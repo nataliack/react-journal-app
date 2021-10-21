@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Button, FormGroup, Input, Label } from 'reactstrap' ;
+import './App.css';
 
 class Form extends Component {
     constructor(props) {
@@ -46,7 +47,7 @@ class Form extends Component {
                         
                             <br></br>
                         <FormGroup>
-                        <label>Entry</label>
+                        <Label>Entry</Label>
                         <Input 
                             placeholder="What's up?"
                             type="textarea"
@@ -57,7 +58,7 @@ class Form extends Component {
                         </FormGroup>
                 </form>
                 <br></br>
-                <Button onClick={this.submitForm}>Submit</Button>
+                <Button colour="danger" onClick={this.submitForm} size= "lg" block>Submit</Button>
                 <br></br>
                 <br></br>
             </div>
